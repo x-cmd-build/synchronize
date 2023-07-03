@@ -1,0 +1,33 @@
+name: x pkg build
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+      gitcode_token: ${{ secrets.GITCODE_TOKEN }}
+      ssh_key: ${{ secrets.SSH_KEY }}
+      git_user: tzw-my
+      git_email: tzw@x-cmd.com
+    steps:
+      - name: main
+        uses: x-cmd/action@main
+        with:
+          code: |
+            x gh --cfg token=${github_token}
+            x gcode --cfg token=${gitcode_token}
+            http_code="$(x curl --suppress-connect-headers -I -L -w "%{http_code}\n"  -s -o /dev/null  "https://github.com/${owner_repo}")"
+            [ "${http_code}" != 404 ] || {
+              x gcode repo create --visibility public ${owner_repo}
+            }
+            git clone git@github.com:${owner_repo}.git
+            cd ${owner_repo}
+            git push git@gitcode.net:${owner_repo}.git
+            git push git@gitcode.net:${owner_repo}.git --tags
+            x gx migrate release gh2gc ${owner_repo}
+
+
+# git push https://oauth2:${github_token}@gitcode.net/${ws_owner_repo}.git
+# git push https://oauth2:${github_token}@gitcode.net/${ws_owner_repo}.git --tags
