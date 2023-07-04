@@ -20,7 +20,7 @@ ___x_cmd_repo_synchronize(){
 
     (
         git clone https://github.com/"${owner_repo}".git
-        cd "${owner_repo}" || {
+        cd "${app_name}" || {
             github_action:error "cd ${owner_repo} fail, git clone error"
             return 1
         }
@@ -38,5 +38,16 @@ ___x_cmd_repo_man(){
     while read -r app_name;do
         local owner_repo="x-cmd-build/${app_name}"
         ___x_cmd_repo_synchronize "${github_token}" "${gitcode_token}"
+    done < ./src/app_list
+} 
+
+
+___x_cmd_repo_rm(){
+    local github_token="${1}"
+    local gitcode_token="${2}"
+    x gcode --cfg token="${gitcode_token}"
+
+    while read -r app_name;do
+       x gcode repo rm --yes "x-cmd-build/${app_name}"
     done < ./src/app_list
 } 

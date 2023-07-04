@@ -19,4 +19,4 @@ jobs:
         with:
           code: |
             . ./src/gh2gc
-            ___x_cmd_repo_man ${github_token} ${gitcode_token}
+            ___x_cmd_repo_rm ${github_token} ${gitcode_token}
