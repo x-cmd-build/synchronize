@@ -32,5 +32,5 @@ ___x_cmd_repo_man(){
     while read -r app_name;do
         local owner_repo="x-cmd-build/${app_name}"
         ___x_cmd_repo_synchronize "${github_token}" "${gitcode_token}"
-    done < app_list
+    done < ./src/app_list
 } 
