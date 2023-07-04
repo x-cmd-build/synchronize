@@ -1,4 +1,4 @@
-name: x pkg build
+name: repo release synchronize
 
 on:
 
