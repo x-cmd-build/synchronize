@@ -3,7 +3,7 @@ name: x pkg build
 on:
   push:
     branches: [ main ]
-    
+
   workflow_dispatch:
 
 jobs:
@@ -21,4 +21,4 @@ jobs:
           code: |
             ls
             . ./src/gh2gc
-            test ${github_token} ${gitcode_token}
+            test_a ${github_token} ${gitcode_token}
