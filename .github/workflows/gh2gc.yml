@@ -18,10 +18,5 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-              x gcode --cfg token="${gitcode_token}"
-              x gcode repo rm --yes x-cmd-build/soft-serve
-              x gcode repo rm --yes x-cmd-build/sd
-              x gcode repo rm --yes x-cmd-build/skate
-
-# . ./src/gh2gc
-# ___x_cmd_repo_man ${github_token} ${gitcode_token}
+            . ./src/gh2gc
+            ___x_cmd_repo_man ${github_token} ${gitcode_token}
