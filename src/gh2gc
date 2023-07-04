@@ -1,6 +1,6 @@
 # shellcheck    shell=sh        disable=SC3043,2034,2154
 x log init github_action
-main(){
+___x_cmd_repo_synchronize(){
     local github_token="${1}"
     local gitcode_token="${2}"
 
@@ -26,6 +26,11 @@ main(){
     )
 }
 
-test_a(){
-    github_action:info "test $*"
-}
+___x_cmd_repo_man(){
+    local github_token="${1}"
+    local gitcode_token="${2}"
+    while read -r app_name;do
+        local owner_repo="x-cmd-build/${app_name}"
+        ___x_cmd_repo_synchronize "${github_token}" "${gitcode_token}"
+    done < app_list
+} 
