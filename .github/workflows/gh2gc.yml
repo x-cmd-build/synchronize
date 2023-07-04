@@ -1,14 +1,16 @@
 name: x pkg build
 
 on:
-
+  push:
+    branches: [ main ]
+    
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      github_token: ${{ secrets.GITHUB_TOKEN_SYNC }}
+      github_token: ${{ secrets.MIN_GITHUB_TOKEN_SYNC }}
       gitcode_token: ${{ secrets.GITCODE_TOKEN_SYNC }}
       git_user: tzw-my
       git_email: tzw@x-cmd.com
