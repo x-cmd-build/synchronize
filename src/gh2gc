@@ -1,5 +1,5 @@
 # shellcheck    shell=sh        disable=SC3043,2034,2154
-x init github_action
+x log init github_action
 main(){
     local github_token="${1}"
     local gitcode_token="${2}"
