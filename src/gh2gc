@@ -17,7 +17,10 @@ ___x_cmd_repo_synchronize(){
 
     (
         git clone https://github.com/"${owner_repo}".git
-        cd "${owner_repo}" || exec
+        cd "${owner_repo}" || {
+            github_action:error "cd ${owner_repo} fail, git clone error"
+            return 1
+        }
         git push https://oauth2:"${gitcode_token}"@gitcode.net/"${owner_repo}".git
         git push https://oauth2:"${gitcode_token}"@gitcode.net/"${owner_repo}".git --tags
         
