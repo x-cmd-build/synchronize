@@ -5,3 +5,5 @@ sd
 broot
 gitoxide
 ffmpeg
+wasmer
+wasmtime
