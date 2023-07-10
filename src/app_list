@@ -8,3 +8,4 @@ ffmpeg
 wasmer
 wasmtime
 hurl
+completion
