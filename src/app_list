@@ -12,3 +12,5 @@ ttyd
 completion
 pdfcpu
 curl
+sqlite-vss
+sqlite-xsv
