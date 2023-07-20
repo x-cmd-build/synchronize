@@ -15,3 +15,4 @@ curl
 sqlite-vss
 sqlite-xsv
 lynis
+sqlite3
