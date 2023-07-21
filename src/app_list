@@ -14,6 +14,6 @@ pdfcpu
 curl
 sqlite-vss
 sqlite-xsv
-lynis
 sqlite3
 bun
+lynis
