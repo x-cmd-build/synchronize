@@ -14,6 +14,8 @@ pdfcpu
 curl
 sqlite-vss
 sqlite-xsv
-lynis
 sqlite3
 osquery
+bun
+lynis
+tmux
