@@ -15,8 +15,8 @@ curl
 sqlite-vss
 sqlite-xsv
 sqlite3
-osquery
 bun
 lynis
 tmux
 proot
+osquery
