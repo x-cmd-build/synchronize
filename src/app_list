@@ -20,3 +20,4 @@ lynis
 tmux
 proot
 osquery
+sqlite-simple
