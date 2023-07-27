@@ -21,3 +21,4 @@ tmux
 proot
 osquery
 sqlite-simple
+websocat
