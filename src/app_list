@@ -7,7 +7,6 @@ gitoxide
 ffmpeg
 wasmer
 wasmtime
-hurl
 ttyd
 completion
 pdfcpu
@@ -31,3 +30,4 @@ nmap
 trdsql
 kind
 mosquitto
+hurl
