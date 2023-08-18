@@ -8,7 +8,6 @@ ffmpeg
 wasmer
 wasmtime
 ttyd
-completion
 pdfcpu
 curl
 sqlite-vss
@@ -34,4 +33,4 @@ hurl
 iSMC
 lf
 git-for-windows
-
+completion
