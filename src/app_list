@@ -34,3 +34,4 @@ iSMC
 lf
 git-for-windows
 completion
+bash_preexec
