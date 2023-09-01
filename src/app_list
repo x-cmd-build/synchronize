@@ -35,3 +35,6 @@ lf
 git-for-windows
 completion
 bash_preexec
+agg
+cfssl
+etcd
