@@ -9,7 +9,6 @@ wasmer
 wasmtime
 ttyd
 pdfcpu
-curl
 sqlite-vss
 sqlite-xsv
 sqlite3
@@ -38,3 +37,4 @@ bash_preexec
 agg
 cfssl
 etcd
+curl
