@@ -39,3 +39,4 @@ cfssl
 etcd
 curl
 7zz
+easyrsa
