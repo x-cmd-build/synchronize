@@ -4,7 +4,6 @@ upx
 sd
 broot
 gitoxide
-ffmpeg
 wasmer
 wasmtime
 ttyd
@@ -40,3 +39,4 @@ etcd
 curl
 7zz
 easyrsa
+ffmpeg
