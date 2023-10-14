@@ -41,3 +41,8 @@ curl
 easyrsa
 ffmpeg
 zsh-plugin
+doctl
+koocli
+gcloud
+vultr-cli
+hcloud
