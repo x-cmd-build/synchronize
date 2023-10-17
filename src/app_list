@@ -41,6 +41,7 @@ curl
 easyrsa
 ffmpeg
 zsh-plugin
+zsh
 doctl
 koocli
 gcloud
