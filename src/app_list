@@ -48,3 +48,7 @@ gcloud
 vultr-cli
 hcloud
 qrencode
+zstd
+aria2
+bwrap
+bandwhich
