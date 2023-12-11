@@ -37,6 +37,7 @@ agg
 cfssl
 etcd
 curl
+mawk
 7zz
 easyrsa
 ffmpeg
